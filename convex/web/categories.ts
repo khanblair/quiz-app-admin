@@ -71,14 +71,15 @@ export const updateCategory = mutation({
   handler: async (ctx, args) => {
     const { _id, ...updates } = args;
 
-    if (updates.slug) {
+    const slug = updates.slug;
+    if (typeof slug === "string" && slug.length > 0) {
       const existing = await ctx.db
         .query("categories")
-        .withIndex("by_slug", (q) => q.eq("slug", updates.slug))
+        .withIndex("by_slug", (q) => q.eq("slug", slug))
         .first();
 
       if (existing && existing._id !== _id) {
-        throw new Error(`Category with slug "${updates.slug}" already exists`);
+        throw new Error(`Category with slug "${slug}" already exists`);
       }
     }
 
