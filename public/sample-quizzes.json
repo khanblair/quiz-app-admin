@@ -1,0 +1,95 @@
+[
+  {
+    "id": "quiz_science_1",
+    "title": "Basic Science Quiz",
+    "description": "Test your knowledge of basic science concepts",
+    "category": "Science",
+    "difficulty": "easy",
+    "duration": 10,
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What is H2O?",
+        "options": ["Water", "Hydrogen", "Oxygen", "Carbon Dioxide"],
+        "correctAnswer": 0,
+        "explanation": "H2O is the chemical formula for water, consisting of two hydrogen atoms and one oxygen atom."
+      },
+      {
+        "id": "q2",
+        "question": "What planet is known as the Red Planet?",
+        "options": ["Venus", "Jupiter", "Mars", "Saturn"],
+        "correctAnswer": 2,
+        "explanation": "Mars is known as the Red Planet due to its reddish appearance caused by iron oxide on its surface."
+      },
+      {
+        "id": "q3",
+        "question": "What is the speed of light?",
+        "options": ["300,000 km/s", "150,000 km/s", "500,000 km/s", "100,000 km/s"],
+        "correctAnswer": 0,
+        "explanation": "The speed of light in a vacuum is approximately 300,000 kilometers per second."
+      }
+    ]
+  },
+  {
+    "id": "quiz_math_1",
+    "title": "Mathematics Fundamentals",
+    "description": "Basic mathematics questions for all levels",
+    "category": "Mathematics",
+    "difficulty": "medium",
+    "duration": 15,
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What is 15 × 12?",
+        "options": ["150", "180", "175", "165"],
+        "correctAnswer": 1,
+        "explanation": "15 multiplied by 12 equals 180."
+      },
+      {
+        "id": "q2",
+        "question": "What is the square root of 144?",
+        "options": ["10", "11", "12", "13"],
+        "correctAnswer": 2,
+        "explanation": "The square root of 144 is 12, since 12 × 12 = 144."
+      },
+      {
+        "id": "q3",
+        "question": "What is the value of π (pi) approximately?",
+        "options": ["3.14", "3.41", "2.71", "1.61"],
+        "correctAnswer": 0,
+        "explanation": "Pi (π) is approximately 3.14159, commonly rounded to 3.14."
+      }
+    ]
+  },
+  {
+    "id": "quiz_history_1",
+    "title": "World History",
+    "description": "Important events in world history",
+    "category": "History",
+    "difficulty": "hard",
+    "duration": 20,
+    "questions": [
+      {
+        "id": "q1",
+        "question": "In which year did World War II end?",
+        "options": ["1943", "1944", "1945", "1946"],
+        "correctAnswer": 2,
+        "explanation": "World War II ended in 1945 with the surrender of Germany in May and Japan in September."
+      },
+      {
+        "id": "q2",
+        "question": "Who was the first President of the United States?",
+        "options": ["Thomas Jefferson", "George Washington", "John Adams", "Benjamin Franklin"],
+        "correctAnswer": 1,
+        "explanation": "George Washington was the first President of the United States, serving from 1789 to 1797."
+      },
+      {
+        "id": "q3",
+        "question": "When did the French Revolution begin?",
+        "options": ["1776", "1789", "1799", "1804"],
+        "correctAnswer": 1,
+        "explanation": "The French Revolution began in 1789 with the storming of the Bastille on July 14."
+      }
+    ]
+  }
+]

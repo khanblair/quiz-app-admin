@@ -1,0 +1,3902 @@
+[
+    {
+        "id": "react-basics",
+        "title": "React Basics",
+        "description": "Test your knowledge of React fundamentals",
+        "category": "Frontend",
+        "difficulty": "Beginner",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is React?",
+                "options": [
+                    "A Python framework",
+                    "A JavaScript library for building user interfaces",
+                    "A database management tool",
+                    "A mobile operating system"
+                ],
+                "correctAnswer": 1,
+                "explanation": "React is a JavaScript library developed by Facebook for building user interfaces with reusable components."
+            },
+            {
+                "id": "q2",
+                "question": "What are React Hooks?",
+                "options": [
+                    "CSS styling methods",
+                    "Functions that let you use state in functional components",
+                    "Backend server routes",
+                    "Database queries"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Hooks are functions that let you 'hook into' React state and lifecycle features from functional components."
+            },
+            {
+                "id": "q3",
+                "question": "Which hook is used for side effects in React?",
+                "options": [
+                    "useState",
+                    "useContext",
+                    "useEffect",
+                    "useReducer"
+                ],
+                "correctAnswer": 2,
+                "explanation": "useEffect is the Hook for performing side effects in functional components, like data fetching and subscriptions."
+            },
+            {
+                "id": "q4",
+                "question": "What does JSX stand for?",
+                "options": [
+                    "JavaScript XML",
+                    "Java Syntax Extension",
+                    "JavaScript Export",
+                    "JSON Extended"
+                ],
+                "correctAnswer": 0,
+                "explanation": "JSX stands for JavaScript XML, allowing you to write HTML-like code in JavaScript."
+            },
+            {
+                "id": "q5",
+                "question": "In React, what is a component?",
+                "options": [
+                    "A CSS file",
+                    "A reusable piece of UI",
+                    "A backend function",
+                    "A database table"
+                ],
+                "correctAnswer": 1,
+                "explanation": "A component is a reusable piece of UI that can accept props and manage state independently."
+            },
+            {
+                "id": "q6",
+                "question": "What is the purpose of ReactDOM.render()?",
+                "options": [
+                    "To create components",
+                    "To render React elements to the DOM",
+                    "To manage state",
+                    "To handle events"
+                ],
+                "correctAnswer": 1,
+                "explanation": "ReactDOM.render() is used to render React elements into the DOM."
+            },
+            {
+                "id": "q7",
+                "question": "What is a state in React?",
+                "options": [
+                    "Immutable data",
+                    "Mutable data managed by components",
+                    "Props passed to components",
+                    "None"
+                ],
+                "correctAnswer": 1,
+                "explanation": "State is managed within the component and can change."
+            },
+            {
+                "id": "q8",
+                "question": "What is the virtual DOM?",
+                "options": [
+                    "A real DOM element",
+                    "A programming concept where an ideal, or 'virtual', representation of a UI is kept in memory",
+                    "A database",
+                    "A CSS framework"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Virtual DOM is a lightweight copy of the real DOM for efficient updates."
+            },
+            {
+                "id": "q9",
+                "question": "What is a prop in React?",
+                "options": [
+                    "Internal state",
+                    "Data passed to a component",
+                    "A function",
+                    "An event"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Props are inputs to components."
+            },
+            {
+                "id": "q10",
+                "question": "What is the use of keys in React?",
+                "options": [
+                    "To identify unique elements in lists",
+                    "To lock components",
+                    "To store data",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Keys help React identify which items have changed in lists."
+            }
+        ]
+    },
+    {
+        "id": "javascript-advanced",
+        "title": "JavaScript Advanced",
+        "description": "Challenge yourself with advanced JavaScript concepts",
+        "category": "Backend",
+        "difficulty": "Intermediate",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is async/await?",
+                "options": [
+                    "A looping construct",
+                    "Syntactic sugar for handling Promises",
+                    "A variable type",
+                    "A CSS property"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Async/await is syntactic sugar for working with Promises, making asynchronous code look more like synchronous code."
+            },
+            {
+                "id": "q2",
+                "question": "What does 'this' refer to in JavaScript?",
+                "options": [
+                    "The global object always",
+                    "The object that owns the method",
+                    "The previous value",
+                    "None of the above"
+                ],
+                "correctAnswer": 1,
+                "explanation": "'this' refers to the object that owns the method being called, and its value depends on how the function is invoked."
+            },
+            {
+                "id": "q3",
+                "question": "What is closure in JavaScript?",
+                "options": [
+                    "A way to close a function",
+                    "A function that has access to variables from its outer scope",
+                    "A loop termination",
+                    "A type of array"
+                ],
+                "correctAnswer": 1,
+                "explanation": "A closure is a function that has access to variables from its outer (enclosing) scope, even after the outer function has returned."
+            },
+            {
+                "id": "q4",
+                "question": "What is destructuring?",
+                "options": [
+                    "Breaking code into smaller pieces",
+                    "Extracting values from objects or arrays into distinct variables",
+                    "Deleting properties from objects",
+                    "Reorganizing array elements"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Destructuring is a convenient way of extracting multiple values from objects or arrays into distinct variables."
+            },
+            {
+                "id": "q5",
+                "question": "What is the spread operator (...) used for?",
+                "options": [
+                    "Creating comments",
+                    "Expanding iterables into individual elements",
+                    "Defining new functions",
+                    "Creating loops"
+                ],
+                "correctAnswer": 1,
+                "explanation": "The spread operator allows an iterable to be expanded in places where zero or more elements are expected."
+            },
+            {
+                "id": "q6",
+                "question": "What is hoisting in JavaScript?",
+                "options": [
+                    "Moving declarations to the top",
+                    "A type of loop",
+                    "A function type",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Hoisting is JavaScript's default behavior of moving declarations to the top."
+            },
+            {
+                "id": "q7",
+                "question": "What is a Promise in JavaScript?",
+                "options": [
+                    "A value that may be available now or in the future",
+                    "A loop",
+                    "A variable",
+                    "A class"
+                ],
+                "correctAnswer": 0,
+                "explanation": "A Promise is an object representing the eventual completion or failure of an asynchronous operation."
+            },
+            {
+                "id": "q8",
+                "question": "What is event bubbling?",
+                "options": [
+                    "Events propagate from child to parent",
+                    "Events propagate from parent to child",
+                    "A type of loop",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "In event bubbling, the event starts from the target element and bubbles up to the root."
+            },
+            {
+                "id": "q9",
+                "question": "What is a module in JavaScript?",
+                "options": [
+                    "A way to organize code into reusable pieces",
+                    "A variable",
+                    "A loop",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Modules allow for better code organization and reuse."
+            },
+            {
+                "id": "q10",
+                "question": "What is the purpose of 'strict mode'?",
+                "options": [
+                    "To make JavaScript stricter and catch common coding errors",
+                    "To relax rules",
+                    "A type of function",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Strict mode helps catch errors early."
+            }
+        ]
+    },
+    {
+        "id": "web-security",
+        "title": "Web Security",
+        "description": "Learn about web security best practices",
+        "category": "Security",
+        "difficulty": "Intermediate",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is CSRF?",
+                "options": [
+                    "A programming language",
+                    "Cross-Site Request Forgery attack",
+                    "A type of cache",
+                    "A database query"
+                ],
+                "correctAnswer": 1,
+                "explanation": "CSRF is an attack that tricks users into performing unwanted actions on websites where they're authenticated."
+            },
+            {
+                "id": "q2",
+                "question": "What does XSS stand for?",
+                "options": [
+                    "XML Secure Server",
+                    "Cross-Site Scripting",
+                    "XML Search System",
+                    "Extreme Security Standard"
+                ],
+                "correctAnswer": 1,
+                "explanation": "XSS (Cross-Site Scripting) is a vulnerability that allows attackers to inject malicious scripts into web pages."
+            },
+            {
+                "id": "q3",
+                "question": "Which is NOT a best practice for password security?",
+                "options": [
+                    "Hash passwords using a strong algorithm",
+                    "Storing passwords in plain text",
+                    "Use salt with hashing",
+                    "Enforce strong password policies"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Storing passwords in plain text is a critical security vulnerability. Passwords should always be hashed and salted."
+            },
+            {
+                "id": "q4",
+                "question": "What is HTTPS?",
+                "options": [
+                    "A markup language",
+                    "HTTP Secure - encrypted communication protocol",
+                    "A database system",
+                    "A programming framework"
+                ],
+                "correctAnswer": 1,
+                "explanation": "HTTPS is the secure version of HTTP that encrypts data in transit using SSL/TLS protocols."
+            },
+            {
+                "id": "q5",
+                "question": "What is SQL Injection?",
+                "options": [
+                    "A type of loop",
+                    "Inserting malicious SQL code into input fields",
+                    "A SQL optimization technique",
+                    "A database backup method"
+                ],
+                "correctAnswer": 1,
+                "explanation": "SQL Injection is an attack where malicious SQL code is inserted through input fields to manipulate databases."
+            },
+            {
+                "id": "q6",
+                "question": "What is OWASP?",
+                "options": [
+                    "A programming language",
+                    "Open Web Application Security Project",
+                    "A database",
+                    "A framework"
+                ],
+                "correctAnswer": 1,
+                "explanation": "OWASP is a non-profit organization that works to improve software security."
+            },
+            {
+                "id": "q7",
+                "question": "What is a firewall?",
+                "options": [
+                    "A network security system",
+                    "A type of virus",
+                    "A programming tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "A firewall monitors and controls incoming and outgoing network traffic."
+            },
+            {
+                "id": "q8",
+                "question": "What is two-factor authentication?",
+                "options": [
+                    "Using two passwords",
+                    "Something you know and something you have",
+                    "A type of encryption",
+                    "None"
+                ],
+                "correctAnswer": 1,
+                "explanation": "2FA adds an extra layer of security."
+            },
+            {
+                "id": "q9",
+                "question": "What is encryption?",
+                "options": [
+                    "Converting data to unreadable form",
+                    "A type of virus",
+                    "A database query",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Encryption protects data confidentiality."
+            },
+            {
+                "id": "q10",
+                "question": "What is a vulnerability?",
+                "options": [
+                    "A weakness in a system",
+                    "A strength",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Vulnerabilities can be exploited by threats."
+            }
+        ]
+    },
+    {
+        "id": "mobile-dev",
+        "title": "Mobile Development",
+        "description": "Test your mobile development knowledge",
+        "category": "Mobile",
+        "difficulty": "Beginner",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is React Native?",
+                "options": [
+                    "A web framework",
+                    "A framework for building native mobile apps with JavaScript",
+                    "A CSS preprocessor",
+                    "A database query language"
+                ],
+                "correctAnswer": 1,
+                "explanation": "React Native is a framework that allows developers to build native iOS and Android apps using JavaScript and React."
+            },
+            {
+                "id": "q2",
+                "question": "What is Expo?",
+                "options": [
+                    "An art exhibition",
+                    "A framework that simplifies React Native development",
+                    "A type of storage",
+                    "A package manager"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Expo is a framework and platform that makes it easy to build, deploy, and iterate on native iOS, Android, and web apps."
+            },
+            {
+                "id": "q3",
+                "question": "Which of these is a mobile OS?",
+                "options": [
+                    "Windows XP",
+                    "macOS",
+                    "iOS",
+                    "Ubuntu"
+                ],
+                "correctAnswer": 2,
+                "explanation": "iOS is the mobile operating system developed by Apple for iPhone and iPad devices."
+            },
+            {
+                "id": "q4",
+                "question": "What is Flutter?",
+                "options": [
+                    "A React library",
+                    "A Google framework for building mobile apps with Dart",
+                    "A CSS animation tool",
+                    "A version control system"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Flutter is an open-source UI framework by Google for building mobile applications using the Dart programming language."
+            },
+            {
+                "id": "q5",
+                "question": "What is a responsive design?",
+                "options": [
+                    "Quick-loading websites",
+                    "Design that adapts to different screen sizes",
+                    "Designs with animations",
+                    "Websites with fast servers"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Responsive design is an approach that makes web applications work well on devices of various sizes and orientations."
+            },
+            {
+                "id": "q6",
+                "question": "What is Android?",
+                "options": [
+                    "A mobile OS",
+                    "A web browser",
+                    "A programming language",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Android is a mobile operating system developed by Google."
+            },
+            {
+                "id": "q7",
+                "question": "What is Swift?",
+                "options": [
+                    "A programming language for iOS",
+                    "A web framework",
+                    "A database",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Swift is Apple's programming language for iOS development."
+            },
+            {
+                "id": "q8",
+                "question": "What is Kotlin?",
+                "options": [
+                    "A programming language for Android",
+                    "A CSS tool",
+                    "A database",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Kotlin is a modern programming language for Android apps."
+            },
+            {
+                "id": "q9",
+                "question": "What is hybrid app development?",
+                "options": [
+                    "Using web tech for native apps",
+                    "Using only native code",
+                    "A type of testing",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Hybrid apps use web technologies wrapped in native containers."
+            },
+            {
+                "id": "q10",
+                "question": "What is PWA?",
+                "options": [
+                    "Progressive Web App",
+                    "A type of database",
+                    "A programming language",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "PWAs are web apps that can work offline and feel like native apps."
+            }
+        ]
+    },
+    {
+        "id": "advanced-react",
+        "title": "Advanced React",
+        "description": "Test your knowledge of advanced React concepts",
+        "category": "Frontend",
+        "difficulty": "Intermediate",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is React Fiber?",
+                "options": [
+                    "A new reconciliation algorithm",
+                    "A component type",
+                    "A state management tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Fiber is the new reconciliation engine in React 16+."
+            },
+            {
+                "id": "q2",
+                "question": "What is useMemo hook?",
+                "options": [
+                    "Memoizes a value",
+                    "Handles effects",
+                    "Manages state",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "useMemo memoizes expensive computations."
+            },
+            {
+                "id": "q3",
+                "question": "What is Suspense in React?",
+                "options": [
+                    "For code splitting and lazy loading",
+                    "A state hook",
+                    "An effect hook",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Suspense lets components 'wait' for something before rendering."
+            },
+            {
+                "id": "q4",
+                "question": "What is a higher-order component?",
+                "options": [
+                    "A function that takes a component and returns a new one",
+                    "A class component",
+                    "A functional component",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "HOCs are used for reusing component logic."
+            },
+            {
+                "id": "q5",
+                "question": "What is React.lazy?",
+                "options": [
+                    "For dynamic imports",
+                    "A hook",
+                    "A component",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "React.lazy enables code splitting."
+            },
+            {
+                "id": "q6",
+                "question": "What is the purpose of shouldComponentUpdate?",
+                "options": [
+                    "To optimize performance by preventing unnecessary renders",
+                    "To handle state",
+                    "To manage props",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "It determines if a component should re-render."
+            },
+            {
+                "id": "q7",
+                "question": "What is Redux?",
+                "options": [
+                    "A state management library",
+                    "A component library",
+                    "A testing tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Redux manages app state predictably."
+            },
+            {
+                "id": "q8",
+                "question": "What is a reducer in Redux?",
+                "options": [
+                    "A function that takes state and action and returns new state",
+                    "A middleware",
+                    "An action creator",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Reducers specify how state changes."
+            },
+            {
+                "id": "q9",
+                "question": "What is middleware in Redux?",
+                "options": [
+                    "Extends Redux with custom functionality",
+                    "A reducer",
+                    "A store",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Middleware is used for logging, async logic, etc."
+            },
+            {
+                "id": "q10",
+                "question": "What is React Context?",
+                "options": [
+                    "A way to pass data through the component tree without props",
+                    "A hook",
+                    "A component",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Context provides global data without prop drilling."
+            }
+        ]
+    },
+    {
+        "id": "frontend-performance-optimization",
+        "title": "Frontend Performance Optimization",
+        "description": "Test your knowledge of optimizing frontend performance",
+        "category": "Frontend",
+        "difficulty": "Hard",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is critical rendering path?",
+                "options": [
+                    "The sequence of steps the browser goes through to render a page",
+                    "A type of error",
+                    "A framework",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Optimizing CRP improves load times."
+            },
+            {
+                "id": "q2",
+                "question": "What is lazy loading?",
+                "options": [
+                    "Loading resources only when needed",
+                    "A type of caching",
+                    "A design pattern",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Lazy loading defers loading of non-critical resources."
+            },
+            {
+                "id": "q3",
+                "question": "What is minification?",
+                "options": [
+                    "Removing unnecessary characters from code",
+                    "A compression technique",
+                    "A testing method",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Minification reduces file sizes."
+            },
+            {
+                "id": "q4",
+                "question": "What is tree shaking?",
+                "options": [
+                    "Removing unused code from bundles",
+                    "A animation effect",
+                    "A data structure",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Tree shaking eliminates dead code."
+            },
+            {
+                "id": "q5",
+                "question": "What is code splitting?",
+                "options": [
+                    "Splitting code into smaller chunks",
+                    "A security measure",
+                    "A debugging tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Code splitting improves initial load times."
+            },
+            {
+                "id": "q6",
+                "question": "What is prefetching?",
+                "options": [
+                    "Loading resources before they are needed",
+                    "A caching strategy",
+                    "A network protocol",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Prefetching anticipates user actions."
+            },
+            {
+                "id": "q7",
+                "question": "What is Web Vitals?",
+                "options": [
+                    "Core metrics for user experience",
+                    "A framework",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Web Vitals measure loading, interactivity, stability."
+            },
+            {
+                "id": "q8",
+                "question": "What is LCP?",
+                "options": [
+                    "Largest Contentful Paint",
+                    "A protocol",
+                    "A metric",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "LCP measures loading performance."
+            },
+            {
+                "id": "q9",
+                "question": "What is FID?",
+                "options": [
+                    "First Input Delay",
+                    "A delay metric",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "FID measures interactivity."
+            },
+            {
+                "id": "q10",
+                "question": "What is CLS?",
+                "options": [
+                    "Cumulative Layout Shift",
+                    "A stability metric",
+                    "A framework",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "CLS measures visual stability."
+            }
+        ]
+    },
+    {
+        "id": "nodejs-basics",
+        "title": "Node.js Basics",
+        "description": "Test your knowledge of Node.js fundamentals",
+        "category": "Backend",
+        "difficulty": "Beginner",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is Node.js?",
+                "options": [
+                    "A frontend framework",
+                    "A JavaScript runtime built on Chrome's V8 engine",
+                    "A database",
+                    "None"
+                ],
+                "correctAnswer": 1,
+                "explanation": "Node.js allows running JavaScript on the server."
+            },
+            {
+                "id": "q2",
+                "question": "What is npm?",
+                "options": [
+                    "Node Package Manager",
+                    "A programming language",
+                    "A browser",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "npm is used to manage packages for Node.js."
+            },
+            {
+                "id": "q3",
+                "question": "What is event-driven programming in Node.js?",
+                "options": [
+                    "Using callbacks for asynchronous operations",
+                    "A type of loop",
+                    "A data structure",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Node.js uses an event loop for non-blocking I/O."
+            },
+            {
+                "id": "q4",
+                "question": "What is a module in Node.js?",
+                "options": [
+                    "A reusable piece of code",
+                    "A variable",
+                    "A function",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Modules encapsulate code."
+            },
+            {
+                "id": "q5",
+                "question": "What is require() in Node.js?",
+                "options": [
+                    "To import modules",
+                    "To export functions",
+                    "A loop",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "require() loads modules."
+            },
+            {
+                "id": "q6",
+                "question": "What is Express.js?",
+                "options": [
+                    "A web framework for Node.js",
+                    "A database",
+                    "A testing tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Express simplifies web app development."
+            },
+            {
+                "id": "q7",
+                "question": "What is callback hell?",
+                "options": [
+                    "Nested callbacks",
+                    "A type of error",
+                    "A pattern",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Nested callbacks make code hard to read."
+            },
+            {
+                "id": "q8",
+                "question": "What is Promise in Node.js?",
+                "options": [
+                    "For handling async operations",
+                    "A synchronous function",
+                    "A variable",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Promises avoid callback hell."
+            },
+            {
+                "id": "q9",
+                "question": "What is async/await?",
+                "options": [
+                    "Syntactic sugar for Promises",
+                    "A loop",
+                    "A module",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Makes async code look synchronous."
+            },
+            {
+                "id": "q10",
+                "question": "What is REPL in Node.js?",
+                "options": [
+                    "Read-Eval-Print-Loop",
+                    "A database",
+                    "A framework",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "REPL is an interactive shell."
+            }
+        ]
+    },
+    {
+        "id": "microservices-architecture",
+        "title": "Microservices Architecture",
+        "description": "Test your knowledge of microservices",
+        "category": "Backend",
+        "difficulty": "Hard",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is a microservice?",
+                "options": [
+                    "A small, independent service",
+                    "A monolithic app",
+                    "A database",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Microservices are loosely coupled services."
+            },
+            {
+                "id": "q2",
+                "question": "What is API Gateway in microservices?",
+                "options": [
+                    "A single entry point for clients",
+                    "A database gateway",
+                    "A testing tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Handles routing, authentication."
+            },
+            {
+                "id": "q3",
+                "question": "What is service discovery?",
+                "options": [
+                    "Finding services dynamically",
+                    "A pattern",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Tools like Eureka, Consul."
+            },
+            {
+                "id": "q4",
+                "question": "What is circuit breaker pattern?",
+                "options": [
+                    "Prevents cascading failures",
+                    "A security pattern",
+                    "A deployment pattern",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Hystrix is an example."
+            },
+            {
+                "id": "q5",
+                "question": "What is eventual consistency?",
+                "options": [
+                    "Data becomes consistent over time",
+                    "Immediate consistency",
+                    "A database type",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Common in distributed systems."
+            },
+            {
+                "id": "q6",
+                "question": "What is CQRS?",
+                "options": [
+                    "Command Query Responsibility Segregation",
+                    "A testing method",
+                    "A framework",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Separates read and write models."
+            },
+            {
+                "id": "q7",
+                "question": "What is saga pattern?",
+                "options": [
+                    "Manages distributed transactions",
+                    "A deployment tool",
+                    "A security pattern",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Uses compensating transactions."
+            },
+            {
+                "id": "q8",
+                "question": "What is strangler pattern?",
+                "options": [
+                    "Gradually replacing monolith with microservices",
+                    "A type of error",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For migration."
+            },
+            {
+                "id": "q9",
+                "question": "What is bulkhead pattern?",
+                "options": [
+                    "Isolates failures",
+                    "A design pattern",
+                    "A testing method",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Prevents failure propagation."
+            },
+            {
+                "id": "q10",
+                "question": "What is sidecar pattern?",
+                "options": [
+                    "Deploys helper components with main app",
+                    "A main pattern",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For logging, monitoring."
+            }
+        ]
+    },
+    {
+        "id": "basic-web-security",
+        "title": "Basic Web Security",
+        "description": "Test your knowledge of basic web security",
+        "category": "Security",
+        "difficulty": "Beginner",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is authentication?",
+                "options": [
+                    "Verifying identity",
+                    "Authorizing access",
+                    "Encrypting data",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Proves who you are."
+            },
+            {
+                "id": "q2",
+                "question": "What is authorization?",
+                "options": [
+                    "Granting access",
+                    "Verifying identity",
+                    "A protocol",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Determines what you can do."
+            },
+            {
+                "id": "q3",
+                "question": "What is HTTPS?",
+                "options": [
+                    "Secure HTTP",
+                    "A language",
+                    "A database",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Encrypts communication."
+            },
+            {
+                "id": "q4",
+                "question": "What is a firewall?",
+                "options": [
+                    "Network security device",
+                    "A virus",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Controls traffic."
+            },
+            {
+                "id": "q5",
+                "question": "What is malware?",
+                "options": [
+                    "Malicious software",
+                    "A protocol",
+                    "A framework",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Includes viruses, trojans."
+            },
+            {
+                "id": "q6",
+                "question": "What is phishing?",
+                "options": [
+                    "Fraudulent attempt to obtain sensitive info",
+                    "A testing method",
+                    "A design pattern",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Often via email."
+            },
+            {
+                "id": "q7",
+                "question": "What is encryption?",
+                "options": [
+                    "Scrambling data",
+                    "A virus",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Protects confidentiality."
+            },
+            {
+                "id": "q8",
+                "question": "What is a VPN?",
+                "options": [
+                    "Virtual Private Network",
+                    "A database",
+                    "A framework",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Secures internet connection."
+            },
+            {
+                "id": "q9",
+                "question": "What is two-factor authentication?",
+                "options": [
+                    "Extra security layer",
+                    "A password",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Beyond username/password."
+            },
+            {
+                "id": "q10",
+                "question": "What is a cookie?",
+                "options": [
+                    "Small data stored in browser",
+                    "A virus",
+                    "A database",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Used for tracking, sessions."
+            }
+        ]
+    },
+    {
+        "id": "advanced-security-concepts",
+        "title": "Advanced Security Concepts",
+        "description": "Test your knowledge of advanced security",
+        "category": "Security",
+        "difficulty": "Hard",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is zero-trust security?",
+                "options": [
+                    "Never trust, always verify",
+                    "Trust everyone",
+                    "A protocol",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Assumes breach, verifies each request."
+            },
+            {
+                "id": "q2",
+                "question": "What is threat modeling?",
+                "options": [
+                    "Identifying potential threats",
+                    "A tool",
+                    "A pattern",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Systematic approach to find vulnerabilities."
+            },
+            {
+                "id": "q3",
+                "question": "What is penetration testing?",
+                "options": [
+                    "Simulated cyber attack",
+                    "A scan",
+                    "A framework",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "To find exploitable vulnerabilities."
+            },
+            {
+                "id": "q4",
+                "question": "What is cryptography?",
+                "options": [
+                    "Study of secure communication",
+                    "A virus",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Includes encryption, decryption."
+            },
+            {
+                "id": "q5",
+                "question": "What is blockchain?",
+                "options": [
+                    "Distributed ledger",
+                    "A database",
+                    "A framework",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Secure, transparent transactions."
+            },
+            {
+                "id": "q6",
+                "question": "What is AI in security?",
+                "options": [
+                    "Used for threat detection",
+                    "A tool",
+                    "A pattern",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Machine learning for anomalies."
+            },
+            {
+                "id": "q7",
+                "question": "What is quantum cryptography?",
+                "options": [
+                    "Uses quantum mechanics for security",
+                    "A type of encryption",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Secure against quantum attacks."
+            },
+            {
+                "id": "q8",
+                "question": "What is homomorphic encryption?",
+                "options": [
+                    "Compute on encrypted data",
+                    "A protocol",
+                    "A framework",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Without decrypting."
+            },
+            {
+                "id": "q9",
+                "question": "What is secure multiparty computation?",
+                "options": [
+                    "Joint computation without revealing inputs",
+                    "A tool",
+                    "A pattern",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Privacy-preserving collaboration."
+            },
+            {
+                "id": "q10",
+                "question": "What is differential privacy?",
+                "options": [
+                    "Adds noise to protect individual data",
+                    "A database",
+                    "A framework",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "In aggregate analysis."
+            }
+        ]
+    },
+    {
+        "id": "advanced-react-native",
+        "title": "Advanced React Native",
+        "description": "Test your knowledge of advanced React Native",
+        "category": "Mobile",
+        "difficulty": "Intermediate",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is Hermes in React Native?",
+                "options": [
+                    "A JavaScript engine",
+                    "A component",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Optimized for mobile."
+            },
+            {
+                "id": "q2",
+                "question": "What is code push?",
+                "options": [
+                    "Over-the-air updates",
+                    "A deployment tool",
+                    "A testing method",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Update apps without app store."
+            },
+            {
+                "id": "q3",
+                "question": "What is Native Modules?",
+                "options": [
+                    "Access native APIs",
+                    "A framework",
+                    "A hook",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Bridge to native code."
+            },
+            {
+                "id": "q4",
+                "question": "What is TurboModules?",
+                "options": [
+                    "New native module system",
+                    "A performance tool",
+                    "A component",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Faster startup."
+            },
+            {
+                "id": "q5",
+                "question": "What is Fabric in React Native?",
+                "options": [
+                    "New rendering system",
+                    "A fabric pattern",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Improves concurrency."
+            },
+            {
+                "id": "q6",
+                "question": "What is SectionList?",
+                "options": [
+                    "For sectioned lists",
+                    "A flat list",
+                    "A component",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Efficient rendering."
+            },
+            {
+                "id": "q7",
+                "question": "What is Animated API?",
+                "options": [
+                    "For animations",
+                    "A tool",
+                    "A hook",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Declarative animations."
+            },
+            {
+                "id": "q8",
+                "question": "What is Gesture Handler?",
+                "options": [
+                    "For handling gestures",
+                    "A component",
+                    "A framework",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Native touch handling."
+            },
+            {
+                "id": "q9",
+                "question": "What is Reanimated?",
+                "options": [
+                    "Animation library",
+                    "A tool",
+                    "A hook",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Runs on UI thread."
+            },
+            {
+                "id": "q10",
+                "question": "What is Detox?",
+                "options": [
+                    "E2E testing framework",
+                    "A detox app",
+                    "A component",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For React Native testing."
+            }
+        ]
+    },
+    {
+        "id": "mobile-app-security",
+        "title": "Mobile App Security",
+        "description": "Test your knowledge of mobile app security",
+        "category": "Mobile",
+        "difficulty": "Hard",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is jailbreaking?",
+                "options": [
+                    "Removing iOS restrictions",
+                    "A security feature",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Can expose security risks."
+            },
+            {
+                "id": "q2",
+                "question": "What is rooting?",
+                "options": [
+                    "Gaining root access on Android",
+                    "A plant",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Similar to jailbreaking."
+            },
+            {
+                "id": "q3",
+                "question": "What is secure enclave?",
+                "options": [
+                    "Hardware-based key manager",
+                    "A software",
+                    "A protocol",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "In Apple devices."
+            },
+            {
+                "id": "q4",
+                "question": "What is app signing?",
+                "options": [
+                    "Verifying app integrity",
+                    "A testing method",
+                    "A design pattern",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Prevents tampering."
+            },
+            {
+                "id": "q5",
+                "question": "What is biometric authentication?",
+                "options": [
+                    "Using fingerprint/face",
+                    "A password",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Enhances security."
+            },
+            {
+                "id": "q6",
+                "question": "What is MDM?",
+                "options": [
+                    "Mobile Device Management",
+                    "A protocol",
+                    "A framework",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For enterprise security."
+            },
+            {
+                "id": "q7",
+                "question": "What is containerization?",
+                "options": [
+                    "Separating work/personal data",
+                    "A tool",
+                    "A pattern",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "In mobile security."
+            },
+            {
+                "id": "q8",
+                "question": "What is app wrapping?",
+                "options": [
+                    "Adding security layers to apps",
+                    "A design",
+                    "A test",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For enterprise apps."
+            },
+            {
+                "id": "q9",
+                "question": "What is runtime protection?",
+                "options": [
+                    "Detecting threats at runtime",
+                    "A tool",
+                    "A protocol",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Against reverse engineering."
+            },
+            {
+                "id": "q10",
+                "question": "What is certificate pinning?",
+                "options": [
+                    "Hardcoding certificates",
+                    "A security measure",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Prevents MITM attacks."
+            }
+        ]
+    },
+    {
+        "id": "sql-basics",
+        "title": "SQL Basics",
+        "description": "Test your knowledge of SQL fundamentals",
+        "category": "Database",
+        "difficulty": "Beginner",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What does SQL stand for?",
+                "options": [
+                    "Structured Query Language",
+                    "Simple Query Language",
+                    "Standard Query Language",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "SQL is used to communicate with databases."
+            },
+            {
+                "id": "q2",
+                "question": "What is a primary key?",
+                "options": [
+                    "Unique identifier for records",
+                    "A foreign key",
+                    "A index",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Ensures uniqueness."
+            },
+            {
+                "id": "q3",
+                "question": "What is SELECT statement?",
+                "options": [
+                    "To retrieve data",
+                    "To insert data",
+                    "To update data",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Queries data from tables."
+            },
+            {
+                "id": "q4",
+                "question": "What is WHERE clause?",
+                "options": [
+                    "To filter results",
+                    "To join tables",
+                    "To order results",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Specifies conditions."
+            },
+            {
+                "id": "q5",
+                "question": "What is JOIN?",
+                "options": [
+                    "To combine rows from two tables",
+                    "To delete data",
+                    "To insert data",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Based on related columns."
+            },
+            {
+                "id": "q6",
+                "question": "What is INNER JOIN?",
+                "options": [
+                    "Returns matching rows",
+                    "Returns all rows",
+                    "A type of index",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Common in both tables."
+            },
+            {
+                "id": "q7",
+                "question": "What is LEFT JOIN?",
+                "options": [
+                    "All from left, matching from right",
+                    "All from right",
+                    "None matching",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Includes non-matching from left."
+            },
+            {
+                "id": "q8",
+                "question": "What is GROUP BY?",
+                "options": [
+                    "Groups rows with same values",
+                    "Orders results",
+                    "Filters results",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Used with aggregate functions."
+            },
+            {
+                "id": "q9",
+                "question": "What is HAVING clause?",
+                "options": [
+                    "Filters groups",
+                    "Filters rows",
+                    "Joins tables",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "After GROUP BY."
+            },
+            {
+                "id": "q10",
+                "question": "What is ORDER BY?",
+                "options": [
+                    "Sorts results",
+                    "Groups results",
+                    "Filters results",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Ascending or descending."
+            }
+        ]
+    },
+    {
+        "id": "database-design",
+        "title": "Database Design",
+        "description": "Test your knowledge of database design",
+        "category": "Database",
+        "difficulty": "Intermediate",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is normalization?",
+                "options": [
+                    "Reducing redundancy",
+                    "A query type",
+                    "A index",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Organizes data to minimize anomalies."
+            },
+            {
+                "id": "q2",
+                "question": "What is 1NF?",
+                "options": [
+                    "Atomic values",
+                    "No duplicates",
+                    "Primary key",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "No repeating groups."
+            },
+            {
+                "id": "q3",
+                "question": "What is 2NF?",
+                "options": [
+                    "No partial dependencies",
+                    "Atomic values",
+                    "Transitive dependencies",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Full functional dependency."
+            },
+            {
+                "id": "q4",
+                "question": "What is 3NF?",
+                "options": [
+                    "No transitive dependencies",
+                    "Partial dependencies",
+                    "A key",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Attributes depend only on key."
+            },
+            {
+                "id": "q5",
+                "question": "What is ER diagram?",
+                "options": [
+                    "Entity-Relationship model",
+                    "A query",
+                    "A table",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Visualizes database structure."
+            },
+            {
+                "id": "q6",
+                "question": "What is cardinality?",
+                "options": [
+                    "Relationship degree",
+                    "A type",
+                    "A constraint",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "One-to-one, one-to-many, etc."
+            },
+            {
+                "id": "q7",
+                "question": "What is foreign key?",
+                "options": [
+                    "References primary key in another table",
+                    "A unique key",
+                    "A index",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Enforces referential integrity."
+            },
+            {
+                "id": "q8",
+                "question": "What is denormalization?",
+                "options": [
+                    "Introducing redundancy for performance",
+                    "Normalizing further",
+                    "A query",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Trade-off for read speed."
+            },
+            {
+                "id": "q9",
+                "question": "What is indexing?",
+                "options": [
+                    "Improving query performance",
+                    "A constraint",
+                    "A view",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Data structure for fast lookup."
+            },
+            {
+                "id": "q10",
+                "question": "What is clustered index?",
+                "options": [
+                    "Determines physical order of data",
+                    "Non-clustered",
+                    "A view",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "One per table."
+            }
+        ]
+    },
+    {
+        "id": "advanced-database-concepts",
+        "title": "Advanced Database Concepts",
+        "description": "Test your knowledge of advanced databases",
+        "category": "Database",
+        "difficulty": "Hard",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is ACID?",
+                "options": [
+                    "Atomicity, Consistency, Isolation, Durability",
+                    "A database type",
+                    "A query",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Transaction properties."
+            },
+            {
+                "id": "q2",
+                "question": "What is sharding?",
+                "options": [
+                    "Horizontal partitioning",
+                    "Vertical partitioning",
+                    "A index",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For scalability in NoSQL."
+            },
+            {
+                "id": "q3",
+                "question": "What is replication?",
+                "options": [
+                    "Copying data across servers",
+                    "A backup",
+                    "A query",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For availability."
+            },
+            {
+                "id": "q4",
+                "question": "What is CAP theorem?",
+                "options": [
+                    "Consistency, Availability, Partition tolerance",
+                    "A protocol",
+                    "A design pattern",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Trade-offs in distributed systems."
+            },
+            {
+                "id": "q5",
+                "question": "What is NoSQL?",
+                "options": [
+                    "Non-relational databases",
+                    "A SQL variant",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For flexible schemas."
+            },
+            {
+                "id": "q6",
+                "question": "What is document database?",
+                "options": [
+                    "Stores data as documents",
+                    "Relational",
+                    "Graph",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Like MongoDB."
+            },
+            {
+                "id": "q7",
+                "question": "What is graph database?",
+                "options": [
+                    "Stores nodes and relationships",
+                    "Key-value",
+                    "Columnar",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For connected data."
+            },
+            {
+                "id": "q8",
+                "question": "What is time-series database?",
+                "options": [
+                    "Optimized for time-stamped data",
+                    "A relational DB",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For metrics, logs."
+            },
+            {
+                "id": "q9",
+                "question": "What is OLAP?",
+                "options": [
+                    "Online Analytical Processing",
+                    "Online Transaction Processing",
+                    "A query",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For analysis."
+            },
+            {
+                "id": "q10",
+                "question": "What is OLTP?",
+                "options": [
+                    "Online Transaction Processing",
+                    "Online Analytical Processing",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For transactions."
+            }
+        ]
+    },
+    {
+        "id": "git-basics",
+        "title": "Git Basics",
+        "description": "Test your knowledge of Git fundamentals",
+        "category": "DevOps",
+        "difficulty": "Beginner",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is Git?",
+                "options": [
+                    "A version control system",
+                    "A programming language",
+                    "A database",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Tracks changes in code."
+            },
+            {
+                "id": "q2",
+                "question": "What is a repository?",
+                "options": [
+                    "A directory with Git tracking",
+                    "A file",
+                    "A command",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Stores project history."
+            },
+            {
+                "id": "q3",
+                "question": "What is git init?",
+                "options": [
+                    "Initializes a new repository",
+                    "Clones a repo",
+                    "Commits changes",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Creates .git directory."
+            },
+            {
+                "id": "q4",
+                "question": "What is git add?",
+                "options": [
+                    "Stages changes",
+                    "Commits",
+                    "Pushes",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Prepares for commit."
+            },
+            {
+                "id": "q5",
+                "question": "What is git commit?",
+                "options": [
+                    "Saves staged changes",
+                    "Stages",
+                    "Pushes",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "With a message."
+            },
+            {
+                "id": "q6",
+                "question": "What is git push?",
+                "options": [
+                    "Uploads to remote",
+                    "Downloads",
+                    "Merges",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "To GitHub etc."
+            },
+            {
+                "id": "q7",
+                "question": "What is git pull?",
+                "options": [
+                    "Fetches and merges from remote",
+                    "Pushes",
+                    "Commits",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Updates local repo."
+            },
+            {
+                "id": "q8",
+                "question": "What is a branch?",
+                "options": [
+                    "Parallel version of repo",
+                    "A commit",
+                    "A file",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For features, bugs."
+            },
+            {
+                "id": "q9",
+                "question": "What is git merge?",
+                "options": [
+                    "Combines branches",
+                    "Creates branch",
+                    "Deletes branch",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Integrates changes."
+            },
+            {
+                "id": "q10",
+                "question": "What is git clone?",
+                "options": [
+                    "Copies a remote repo",
+                    "Initializes",
+                    "Adds",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "To local machine."
+            }
+        ]
+    },
+    {
+        "id": "cicd-pipelines",
+        "title": "CI/CD Pipelines",
+        "description": "Test your knowledge of CI/CD",
+        "category": "DevOps",
+        "difficulty": "Intermediate",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is CI?",
+                "options": [
+                    "Continuous Integration",
+                    "Continuous Deployment",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Automates integration."
+            },
+            {
+                "id": "q2",
+                "question": "What is CD?",
+                "options": [
+                    "Continuous Delivery/Deployment",
+                    "Continuous Integration",
+                    "A protocol",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Automates release."
+            },
+            {
+                "id": "q3",
+                "question": "What is Jenkins?",
+                "options": [
+                    "A CI/CD tool",
+                    "A database",
+                    "A framework",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Open-source automation server."
+            },
+            {
+                "id": "q4",
+                "question": "What is a pipeline?",
+                "options": [
+                    "Series of automated steps",
+                    "A tool",
+                    "A pattern",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For build, test, deploy."
+            },
+            {
+                "id": "q5",
+                "question": "What is blue-green deployment?",
+                "options": [
+                    "Two identical environments",
+                    "A color scheme",
+                    "A test",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For zero-downtime updates."
+            },
+            {
+                "id": "q6",
+                "question": "What is canary release?",
+                "options": [
+                    "Gradual rollout",
+                    "A bird",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "To subset of users."
+            },
+            {
+                "id": "q7",
+                "question": "What is infrastructure as code?",
+                "options": [
+                    "Managing infra with code",
+                    "A framework",
+                    "A test",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Tools like Terraform."
+            },
+            {
+                "id": "q8",
+                "question": "What is Docker?",
+                "options": [
+                    "Containerization platform",
+                    "A database",
+                    "A language",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For consistent environments."
+            },
+            {
+                "id": "q9",
+                "question": "What is Kubernetes?",
+                "options": [
+                    "Container orchestration",
+                    "A tool",
+                    "A framework",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Manages containers."
+            },
+            {
+                "id": "q10",
+                "question": "What is GitOps?",
+                "options": [
+                    "Using Git for operations",
+                    "A game",
+                    "A test",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Declarative infra management."
+            }
+        ]
+    },
+    {
+        "id": "kubernetes-fundamentals",
+        "title": "Kubernetes Fundamentals",
+        "description": "Test your knowledge of Kubernetes",
+        "category": "DevOps",
+        "difficulty": "Hard",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is Kubernetes?",
+                "options": [
+                    "Container orchestration platform",
+                    "A database",
+                    "A language",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Automates deployment, scaling."
+            },
+            {
+                "id": "q2",
+                "question": "What is a Pod?",
+                "options": [
+                    "Smallest deployable unit",
+                    "A node",
+                    "A cluster",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Contains containers."
+            },
+            {
+                "id": "q3",
+                "question": "What is a Deployment?",
+                "options": [
+                    "Manages Pods",
+                    "A service",
+                    "A volume",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Declarative updates."
+            },
+            {
+                "id": "q4",
+                "question": "What is a Service?",
+                "options": [
+                    "Exposes Pods",
+                    "A controller",
+                    "A storage",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Network abstraction."
+            },
+            {
+                "id": "q5",
+                "question": "What is kubectl?",
+                "options": [
+                    "Command-line tool for Kubernetes",
+                    "A daemon",
+                    "A pod",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Interacts with cluster."
+            },
+            {
+                "id": "q6",
+                "question": "What is etcd?",
+                "options": [
+                    "Key-value store for cluster data",
+                    "A scheduler",
+                    "A controller",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Stores configuration."
+            },
+            {
+                "id": "q7",
+                "question": "What is kubelet?",
+                "options": [
+                    "Agent on nodes",
+                    "API server",
+                    "Scheduler",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Manages Pods on node."
+            },
+            {
+                "id": "q8",
+                "question": "What is Namespace?",
+                "options": [
+                    "Logical partitioning",
+                    "A physical server",
+                    "A volume",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For multi-tenancy."
+            },
+            {
+                "id": "q9",
+                "question": "What is Ingress?",
+                "options": [
+                    "Manages external access",
+                    "A pod",
+                    "A deployment",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "HTTP routing."
+            },
+            {
+                "id": "q10",
+                "question": "What is Helm?",
+                "options": [
+                    "Package manager for Kubernetes",
+                    "A tool",
+                    "A framework",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Manages charts."
+            }
+        ]
+    },
+    {
+        "id": "aws-basics",
+        "title": "AWS Basics",
+        "description": "Test your knowledge of AWS fundamentals",
+        "category": "Cloud Computing",
+        "difficulty": "Beginner",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is AWS?",
+                "options": [
+                    "Amazon Web Services",
+                    "A database",
+                    "A language",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Cloud computing platform."
+            },
+            {
+                "id": "q2",
+                "question": "What is EC2?",
+                "options": [
+                    "Elastic Compute Cloud",
+                    "A storage",
+                    "A network",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Virtual servers."
+            },
+            {
+                "id": "q3",
+                "question": "What is S3?",
+                "options": [
+                    "Simple Storage Service",
+                    "A compute service",
+                    "A database",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Object storage."
+            },
+            {
+                "id": "q4",
+                "question": "What is Lambda?",
+                "options": [
+                    "Serverless computing",
+                    "A virtual machine",
+                    "A storage",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Run code without servers."
+            },
+            {
+                "id": "q5",
+                "question": "What is VPC?",
+                "options": [
+                    "Virtual Private Cloud",
+                    "A public cloud",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Isolated network."
+            },
+            {
+                "id": "q6",
+                "question": "What is IAM?",
+                "options": [
+                    "Identity and Access Management",
+                    "A database",
+                    "A compute",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Manages users, permissions."
+            },
+            {
+                "id": "q7",
+                "question": "What is RDS?",
+                "options": [
+                    "Relational Database Service",
+                    "A storage",
+                    "A network",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Managed relational DB."
+            },
+            {
+                "id": "q8",
+                "question": "What is CloudFront?",
+                "options": [
+                    "Content Delivery Network",
+                    "A database",
+                    "A compute",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "CDN for fast delivery."
+            },
+            {
+                "id": "q9",
+                "question": "What is Route 53?",
+                "options": [
+                    "DNS service",
+                    "A road",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Domain registration, routing."
+            },
+            {
+                "id": "q10",
+                "question": "What is EBS?",
+                "options": [
+                    "Elastic Block Store",
+                    "A compute",
+                    "A network",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Persistent storage."
+            }
+        ]
+    },
+    {
+        "id": "cloud-architecture",
+        "title": "Cloud Architecture",
+        "description": "Test your knowledge of cloud architecture",
+        "category": "Cloud Computing",
+        "difficulty": "Intermediate",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is IaaS?",
+                "options": [
+                    "Infrastructure as a Service",
+                    "Platform",
+                    "Software",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Virtualized computing resources."
+            },
+            {
+                "id": "q2",
+                "question": "What is PaaS?",
+                "options": [
+                    "Platform as a Service",
+                    "Infrastructure",
+                    "Software",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Development platforms."
+            },
+            {
+                "id": "q3",
+                "question": "What is SaaS?",
+                "options": [
+                    "Software as a Service",
+                    "Platform",
+                    "Infrastructure",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Applications over internet."
+            },
+            {
+                "id": "q4",
+                "question": "What is public cloud?",
+                "options": [
+                    "Shared infrastructure",
+                    "Private",
+                    "Hybrid",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Like AWS, Azure."
+            },
+            {
+                "id": "q5",
+                "question": "What is private cloud?",
+                "options": [
+                    "Dedicated to single organization",
+                    "Public",
+                    "Hybrid",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "On-premises or hosted."
+            },
+            {
+                "id": "q6",
+                "question": "What is hybrid cloud?",
+                "options": [
+                    "Combination of public and private",
+                    "A tool",
+                    "A service",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Best of both."
+            },
+            {
+                "id": "q7",
+                "question": "What is serverless?",
+                "options": [
+                    "No server management",
+                    "With servers",
+                    "A database",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Like AWS Lambda."
+            },
+            {
+                "id": "q8",
+                "question": "What is microservices?",
+                "options": [
+                    "Loosely coupled services",
+                    "Monolith",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Scalable architecture."
+            },
+            {
+                "id": "q9",
+                "question": "What is containerization?",
+                "options": [
+                    "Packaging apps with dependencies",
+                    "A virtualization",
+                    "A cloud type",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Docker."
+            },
+            {
+                "id": "q10",
+                "question": "What is orchestration?",
+                "options": [
+                    "Managing containers",
+                    "A tool",
+                    "A service",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Kubernetes."
+            }
+        ]
+    },
+    {
+        "id": "cloud-security",
+        "title": "Cloud Security",
+        "description": "Test your knowledge of cloud security",
+        "category": "Cloud Computing",
+        "difficulty": "Hard",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is shared responsibility model?",
+                "options": [
+                    "Provider secures infrastructure, customer secures data",
+                    "All on provider",
+                    "All on customer",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "In cloud."
+            },
+            {
+                "id": "q2",
+                "question": "What is data encryption in cloud?",
+                "options": [
+                    "At rest and in transit",
+                    "Only at rest",
+                    "Only in transit",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Protects data."
+            },
+            {
+                "id": "q3",
+                "question": "What is IAM in cloud?",
+                "options": [
+                    "Identity and Access Management",
+                    "A database",
+                    "A compute",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Controls access."
+            },
+            {
+                "id": "q4",
+                "question": "What is MFA?",
+                "options": [
+                    "Multi-Factor Authentication",
+                    "A tool",
+                    "A protocol",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Extra security."
+            },
+            {
+                "id": "q5",
+                "question": "What is DDoS protection?",
+                "options": [
+                    "Against distributed denial of service",
+                    "A firewall",
+                    "A database",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Mitigates attacks."
+            },
+            {
+                "id": "q6",
+                "question": "What is compliance in cloud?",
+                "options": [
+                    "Meeting regulatory standards",
+                    "A tool",
+                    "A service",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Like GDPR, HIPAA."
+            },
+            {
+                "id": "q7",
+                "question": "What is WAF?",
+                "options": [
+                    "Web Application Firewall",
+                    "A database",
+                    "A compute",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Protects web apps."
+            },
+            {
+                "id": "q8",
+                "question": "What is SSE?",
+                "options": [
+                    "Server-Side Encryption",
+                    "Client-side",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For data at rest."
+            },
+            {
+                "id": "q9",
+                "question": "What is cloud auditing?",
+                "options": [
+                    "Monitoring and logging",
+                    "A test",
+                    "A framework",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For compliance."
+            },
+            {
+                "id": "q10",
+                "question": "What is zero trust in cloud?",
+                "options": [
+                    "Verify every request",
+                    "Trust all",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "No implicit trust."
+            }
+        ]
+    },
+    {
+        "id": "ui-design-principles",
+        "title": "UI Design Principles",
+        "description": "Test your knowledge of UI design",
+        "category": "UI/UX Design",
+        "difficulty": "Beginner",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is consistency in UI?",
+                "options": [
+                    "Uniform design elements",
+                    "Varied styles",
+                    "A color",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Familiar user experience."
+            },
+            {
+                "id": "q2",
+                "question": "What is hierarchy?",
+                "options": [
+                    "Organizing content by importance",
+                    "A flat structure",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Guides user attention."
+            },
+            {
+                "id": "q3",
+                "question": "What is whitespace?",
+                "options": [
+                    "Empty space for breathing room",
+                    "Filled space",
+                    "A color",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Improves readability."
+            },
+            {
+                "id": "q4",
+                "question": "What is alignment?",
+                "options": [
+                    "Arranging elements orderly",
+                    "Random placement",
+                    "A grid",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Creates clean look."
+            },
+            {
+                "id": "q5",
+                "question": "What is contrast?",
+                "options": [
+                    "Difference in elements for emphasis",
+                    "Similarity",
+                    "A pattern",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Draws attention."
+            },
+            {
+                "id": "q6",
+                "question": "What is proximity?",
+                "options": [
+                    "Grouping related elements",
+                    "Separating",
+                    "A distance",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Gestalt principle."
+            },
+            {
+                "id": "q7",
+                "question": "What is repetition?",
+                "options": [
+                    "Reusing elements for unity",
+                    "Variety",
+                    "A loop",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Strengthens design."
+            },
+            {
+                "id": "q8",
+                "question": "What is balance?",
+                "options": [
+                    "Even distribution of visual weight",
+                    "Imbalance",
+                    "A scale",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Symmetrical or asymmetrical."
+            },
+            {
+                "id": "q9",
+                "question": "What is emphasis?",
+                "options": [
+                    "Highlighting key elements",
+                    "Dimming",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Focal points."
+            },
+            {
+                "id": "q10",
+                "question": "What is rhythm?",
+                "options": [
+                    "Repeating elements for flow",
+                    "Static design",
+                    "A music",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Creates movement."
+            }
+        ]
+    },
+    {
+        "id": "ux-research-methods",
+        "title": "UX Research Methods",
+        "description": "Test your knowledge of UX research",
+        "category": "UI/UX Design",
+        "difficulty": "Intermediate",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is user interview?",
+                "options": [
+                    "Direct conversation with users",
+                    "A survey",
+                    "A test",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Gathers qualitative data."
+            },
+            {
+                "id": "q2",
+                "question": "What is usability testing?",
+                "options": [
+                    "Observing users interact with product",
+                    "A survey",
+                    "An interview",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Finds usability issues."
+            },
+            {
+                "id": "q3",
+                "question": "What is A/B testing?",
+                "options": [
+                    "Comparing two versions",
+                    "A single test",
+                    "A survey",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Measures performance."
+            },
+            {
+                "id": "q4",
+                "question": "What is card sorting?",
+                "options": [
+                    "Organizing content into categories",
+                    "A game",
+                    "A test",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For information architecture."
+            },
+            {
+                "id": "q5",
+                "question": "What is eye tracking?",
+                "options": [
+                    "Monitoring where users look",
+                    "A survey",
+                    "An interview",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Heatmaps of attention."
+            },
+            {
+                "id": "q6",
+                "question": "What is diary study?",
+                "options": [
+                    "Users log experiences over time",
+                    "A one-time test",
+                    "A survey",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Longitudinal data."
+            },
+            {
+                "id": "q7",
+                "question": "What is contextual inquiry?",
+                "options": [
+                    "Observing users in their environment",
+                    "Lab testing",
+                    "A survey",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Real-world insights."
+            },
+            {
+                "id": "q8",
+                "question": "What is heuristic evaluation?",
+                "options": [
+                    "Experts review against principles",
+                    "User testing",
+                    "A survey",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Quick usability check."
+            },
+            {
+                "id": "q9",
+                "question": "What is persona?",
+                "options": [
+                    "Fictional user archetype",
+                    "A real user",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Based on research."
+            },
+            {
+                "id": "q10",
+                "question": "What is journey map?",
+                "options": [
+                    "Visualizes user experience over time",
+                    "A roadmap",
+                    "A test",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Identifies pain points."
+            }
+        ]
+    },
+    {
+        "id": "advanced-ui-ux-design",
+        "title": "Advanced UI/UX Design",
+        "description": "Test your knowledge of advanced UI/UX",
+        "category": "UI/UX Design",
+        "difficulty": "Hard",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is design thinking?",
+                "options": [
+                    "Human-centered problem solving",
+                    "A tool",
+                    "A pattern",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Empathize, define, ideate, prototype, test."
+            },
+            {
+                "id": "q2",
+                "question": "What is atomic design?",
+                "options": [
+                    "Building from atoms to pages",
+                    "A methodology",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "By Brad Frost."
+            },
+            {
+                "id": "q3",
+                "question": "What is responsive design?",
+                "options": [
+                    "Adapts to screen sizes",
+                    "Fixed layout",
+                    "A framework",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Fluid grids, media queries."
+            },
+            {
+                "id": "q4",
+                "question": "What is progressive enhancement?",
+                "options": [
+                    "Core functionality first, then enhancements",
+                    "A pattern",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For accessibility."
+            },
+            {
+                "id": "q5",
+                "question": "What is inclusive design?",
+                "options": [
+                    "Designing for diversity",
+                    "Exclusive",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Considers all users."
+            },
+            {
+                "id": "q6",
+                "question": "What is dark pattern?",
+                "options": [
+                    "Deceptive UI",
+                    "A color scheme",
+                    "A test",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Tricks users."
+            },
+            {
+                "id": "q7",
+                "question": "What is gamification?",
+                "options": [
+                    "Applying game elements",
+                    "A game",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "To engage users."
+            },
+            {
+                "id": "q8",
+                "question": "What is microinteraction?",
+                "options": [
+                    "Small, functional animations",
+                    "Large interactions",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Enhances UX."
+            },
+            {
+                "id": "q9",
+                "question": "What is skeumorphism?",
+                "options": [
+                    "Design mimicking real objects",
+                    "Flat design",
+                    "A pattern",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Like early iOS."
+            },
+            {
+                "id": "q10",
+                "question": "What is flat design?",
+                "options": [
+                    "Minimalist, no effects",
+                    "3D design",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Clean, modern."
+            }
+        ]
+    },
+    {
+        "id": "unit-testing-basics",
+        "title": "Unit Testing Basics",
+        "description": "Test your knowledge of unit testing",
+        "category": "Testing",
+        "difficulty": "Beginner",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is unit testing?",
+                "options": [
+                    "Testing individual components",
+                    "System testing",
+                    "Integration testing",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Isolates units."
+            },
+            {
+                "id": "q2",
+                "question": "What is a unit test framework?",
+                "options": [
+                    "Like JUnit, NUnit",
+                    "A database",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Automates testing."
+            },
+            {
+                "id": "q3",
+                "question": "What is assertion?",
+                "options": [
+                    "Verifying expected results",
+                    "A loop",
+                    "A variable",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Checks conditions."
+            },
+            {
+                "id": "q4",
+                "question": "What is mocking?",
+                "options": [
+                    "Simulating dependencies",
+                    "Real objects",
+                    "A test type",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Isolates unit."
+            },
+            {
+                "id": "q5",
+                "question": "What is TDD?",
+                "options": [
+                    "Test-Driven Development",
+                    "A tool",
+                    "A pattern",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Tests first."
+            },
+            {
+                "id": "q6",
+                "question": "What is BDD?",
+                "options": [
+                    "Behavior-Driven Development",
+                    "A framework",
+                    "A test",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Focuses on behavior."
+            },
+            {
+                "id": "q7",
+                "question": "What is setup/teardown?",
+                "options": [
+                    "Prepare/clean test environment",
+                    "A loop",
+                    "A variable",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For each test."
+            },
+            {
+                "id": "q8",
+                "question": "What is test coverage?",
+                "options": [
+                    "Percentage of code tested",
+                    "A tool",
+                    "A metric",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Measures thoroughness."
+            },
+            {
+                "id": "q9",
+                "question": "What is parameterized testing?",
+                "options": [
+                    "Running test with different data",
+                    "A type",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Data-driven tests."
+            },
+            {
+                "id": "q10",
+                "question": "What is isolation in unit testing?",
+                "options": [
+                    "Testing without dependencies",
+                    "With dependencies",
+                    "A pattern",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Uses mocks/stubs."
+            }
+        ]
+    },
+    {
+        "id": "integration-testing",
+        "title": "Integration Testing",
+        "description": "Test your knowledge of integration testing",
+        "category": "Testing",
+        "difficulty": "Intermediate",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is integration testing?",
+                "options": [
+                    "Testing combined modules",
+                    "Unit testing",
+                    "System testing",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Checks interactions."
+            },
+            {
+                "id": "q2",
+                "question": "What is top-down integration?",
+                "options": [
+                    "Start from top modules",
+                    "Bottom-up",
+                    "Big bang",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Uses stubs."
+            },
+            {
+                "id": "q3",
+                "question": "What is bottom-up integration?",
+                "options": [
+                    "Start from bottom modules",
+                    "Top-down",
+                    "Sandwich",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Uses drivers."
+            },
+            {
+                "id": "q4",
+                "question": "What is big bang integration?",
+                "options": [
+                    "Integrate all at once",
+                    "Incremental",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Risky for large systems."
+            },
+            {
+                "id": "q5",
+                "question": "What is sandwich integration?",
+                "options": [
+                    "Combination of top-down and bottom-up",
+                    "Big bang",
+                    "A test",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Hybrid approach."
+            },
+            {
+                "id": "q6",
+                "question": "What is stub?",
+                "options": [
+                    "Simulates lower module",
+                    "Simulates upper",
+                    "A driver",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "In top-down."
+            },
+            {
+                "id": "q7",
+                "question": "What is driver?",
+                "options": [
+                    "Simulates upper module",
+                    "Lower",
+                    "A stub",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "In bottom-up."
+            },
+            {
+                "id": "q8",
+                "question": "What is API testing?",
+                "options": [
+                    "Testing integrations via APIs",
+                    "UI testing",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For web services."
+            },
+            {
+                "id": "q9",
+                "question": "What is contract testing?",
+                "options": [
+                    "Verifying API contracts",
+                    "A performance test",
+                    "A unit test",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "In microservices."
+            },
+            {
+                "id": "q10",
+                "question": "What is end-to-end testing?",
+                "options": [
+                    "Testing full flow",
+                    "Unit",
+                    "Integration",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Simulates user journey."
+            }
+        ]
+    },
+    {
+        "id": "performance-testing",
+        "title": "Performance Testing",
+        "description": "Test your knowledge of performance testing",
+        "category": "Testing",
+        "difficulty": "Hard",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is performance testing?",
+                "options": [
+                    "Testing under load",
+                    "Functional testing",
+                    "Security testing",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Measures speed, scalability."
+            },
+            {
+                "id": "q2",
+                "question": "What is load testing?",
+                "options": [
+                    "Simulating expected load",
+                    "Stress testing",
+                    "Spike testing",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Normal conditions."
+            },
+            {
+                "id": "q3",
+                "question": "What is stress testing?",
+                "options": [
+                    "Beyond normal load",
+                    "Load testing",
+                    "Endurance",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Breaking point."
+            },
+            {
+                "id": "q4",
+                "question": "What is soak testing?",
+                "options": [
+                    "Long duration load",
+                    "Spike",
+                    "Stress",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Memory leaks."
+            },
+            {
+                "id": "q5",
+                "question": "What is spike testing?",
+                "options": [
+                    "Sudden increase in load",
+                    "Steady load",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Handles surges."
+            },
+            {
+                "id": "q6",
+                "question": "What is JMeter?",
+                "options": [
+                    "Performance testing tool",
+                    "A database",
+                    "A framework",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Open-source."
+            },
+            {
+                "id": "q7",
+                "question": "What is response time?",
+                "options": [
+                    "Time to respond to request",
+                    "Throughput",
+                    "Error rate",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Key metric."
+            },
+            {
+                "id": "q8",
+                "question": "What is throughput?",
+                "options": [
+                    "Requests processed per unit time",
+                    "Response time",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "System capacity."
+            },
+            {
+                "id": "q9",
+                "question": "What is virtual user?",
+                "options": [
+                    "Simulated user in load test",
+                    "Real user",
+                    "A bot",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Generates load."
+            },
+            {
+                "id": "q10",
+                "question": "What is baseline?",
+                "options": [
+                    "Reference performance measurement",
+                    "A tool",
+                    "A test type",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For comparison."
+            }
+        ]
+    },
+    {
+        "id": "machine-learning-basics",
+        "title": "Machine Learning Basics",
+        "description": "Test your knowledge of ML fundamentals",
+        "category": "Artificial Intelligence",
+        "difficulty": "Beginner",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is machine learning?",
+                "options": [
+                    "Algorithms learning from data",
+                    "Manual programming",
+                    "A database",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Improves with experience."
+            },
+            {
+                "id": "q2",
+                "question": "What is supervised learning?",
+                "options": [
+                    "Labeled data",
+                    "Unlabeled data",
+                    "Rewards",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Classification, regression."
+            },
+            {
+                "id": "q3",
+                "question": "What is unsupervised learning?",
+                "options": [
+                    "Unlabeled data",
+                    "Labeled",
+                    "Rewards",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Clustering, association."
+            },
+            {
+                "id": "q4",
+                "question": "What is reinforcement learning?",
+                "options": [
+                    "Learning from rewards",
+                    "Supervised",
+                    "Unsupervised",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Agent interacts with environment."
+            },
+            {
+                "id": "q5",
+                "question": "What is overfitting?",
+                "options": [
+                    "Model too complex, poor generalization",
+                    "Underfitting",
+                    "Perfect fit",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Performs well on training, poorly on test."
+            },
+            {
+                "id": "q6",
+                "question": "What is underfitting?",
+                "options": [
+                    "Model too simple",
+                    "Overfitting",
+                    "Good fit",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Fails to capture patterns."
+            },
+            {
+                "id": "q7",
+                "question": "What is cross-validation?",
+                "options": [
+                    "Technique to evaluate model performance",
+                    "A algorithm",
+                    "A dataset",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "K-fold."
+            },
+            {
+                "id": "q8",
+                "question": "What is feature engineering?",
+                "options": [
+                    "Creating new features from data",
+                    "Model selection",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Improves model accuracy."
+            },
+            {
+                "id": "q9",
+                "question": "What is bias-variance tradeoff?",
+                "options": [
+                    "Balancing underfit and overfit",
+                    "A metric",
+                    "A algorithm",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Key to generalization."
+            },
+            {
+                "id": "q10",
+                "question": "What is ensemble learning?",
+                "options": [
+                    "Combining multiple models",
+                    "Single model",
+                    "A dataset",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Bagging, boosting."
+            }
+        ]
+    },
+    {
+        "id": "neural-networks",
+        "title": "Neural Networks",
+        "description": "Test your knowledge of neural networks",
+        "category": "Artificial Intelligence",
+        "difficulty": "Intermediate",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is a neural network?",
+                "options": [
+                    "Interconnected nodes inspired by brain",
+                    "A database",
+                    "A algorithm",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Layers of neurons."
+            },
+            {
+                "id": "q2",
+                "question": "What is a neuron?",
+                "options": [
+                    "Basic unit that processes input",
+                    "A layer",
+                    "A weight",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Applies activation function."
+            },
+            {
+                "id": "q3",
+                "question": "What is activation function?",
+                "options": [
+                    "Introduces non-linearity",
+                    "A linear function",
+                    "A weight",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Like sigmoid, ReLU."
+            },
+            {
+                "id": "q4",
+                "question": "What is backpropagation?",
+                "options": [
+                    "Adjusting weights using gradients",
+                    "Forward pass",
+                    "A layer",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Learning algorithm."
+            },
+            {
+                "id": "q5",
+                "question": "What is feedforward network?",
+                "options": [
+                    "No cycles, data flows forward",
+                    "With cycles",
+                    "A type",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Simple NN."
+            },
+            {
+                "id": "q6",
+                "question": "What is CNN?",
+                "options": [
+                    "Convolutional Neural Network",
+                    "Recurrent",
+                    "Feedforward",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For images."
+            },
+            {
+                "id": "q7",
+                "question": "What is RNN?",
+                "options": [
+                    "Recurrent Neural Network",
+                    "Convolutional",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For sequences."
+            },
+            {
+                "id": "q8",
+                "question": "What is LSTM?",
+                "options": [
+                    "Long Short-Term Memory",
+                    "A simple RNN",
+                    "A CNN",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Handles long dependencies."
+            },
+            {
+                "id": "q9",
+                "question": "What is vanishing gradient?",
+                "options": [
+                    "Gradients become too small",
+                    "Too large",
+                    "A metric",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Problem in deep nets."
+            },
+            {
+                "id": "q10",
+                "question": "What is exploding gradient?",
+                "options": [
+                    "Gradients become too large",
+                    "Too small",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Unstable training."
+            }
+        ]
+    },
+    {
+        "id": "advanced-deep-learning",
+        "title": "Advanced Deep Learning",
+        "description": "Test your knowledge of advanced DL",
+        "category": "Artificial Intelligence",
+        "difficulty": "Hard",
+        "duration": 10,
+        "questions": [
+            {
+                "id": "q1",
+                "question": "What is transfer learning?",
+                "options": [
+                    "Using pre-trained models",
+                    "A new model",
+                    "A dataset",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Fine-tuning for new tasks."
+            },
+            {
+                "id": "q2",
+                "question": "What is GAN?",
+                "options": [
+                    "Generative Adversarial Network",
+                    "A classifier",
+                    "A regressor",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Generator and discriminator."
+            },
+            {
+                "id": "q3",
+                "question": "What is autoencoder?",
+                "options": [
+                    "Unsupervised learning for representation",
+                    "Supervised",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Encoder-decoder."
+            },
+            {
+                "id": "q4",
+                "question": "What is attention mechanism?",
+                "options": [
+                    "Focuses on relevant parts",
+                    "A layer",
+                    "A optimizer",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "In transformers."
+            },
+            {
+                "id": "q5",
+                "question": "What is transformer model?",
+                "options": [
+                    "Self-attention based",
+                    "RNN",
+                    "CNN",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "For NLP."
+            },
+            {
+                "id": "q6",
+                "question": "What is BERT?",
+                "options": [
+                    "Bidirectional Encoder Representations from Transformers",
+                    "A CNN",
+                    "A RNN",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Pre-trained model."
+            },
+            {
+                "id": "q7",
+                "question": "What is federated learning?",
+                "options": [
+                    "Decentralized training",
+                    "Centralized",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Privacy-preserving."
+            },
+            {
+                "id": "q8",
+                "question": "What is reinforcement learning?",
+                "options": [
+                    "Learning from rewards",
+                    "Supervised",
+                    "Unsupervised",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Policy optimization."
+            },
+            {
+                "id": "q9",
+                "question": "What is Q-learning?",
+                "options": [
+                    "Model-free RL algorithm",
+                    "Model-based",
+                    "A network",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "Off-policy."
+            },
+            {
+                "id": "q10",
+                "question": "What is AlphaGo?",
+                "options": [
+                    "AI that beat Go champion",
+                    "A game",
+                    "A tool",
+                    "None"
+                ],
+                "correctAnswer": 0,
+                "explanation": "DeepMind's breakthrough."
+            }
+        ]
+    }
+]

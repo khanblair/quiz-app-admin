@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Science",
+    "slug": "science",
+    "description": "Scientific topics including physics, chemistry, and biology",
+    "icon": "🔬",
+    "color": "#6366f1"
+  },
+  {
+    "name": "Mathematics",
+    "slug": "mathematics",
+    "description": "Math problems and mathematical concepts",
+    "icon": "📐",
+    "color": "#8b5cf6"
+  },
+  {
+    "name": "History",
+    "slug": "history",
+    "description": "Historical events and important figures",
+    "icon": "📚",
+    "color": "#ec4899"
+  },
+  {
+    "name": "Geography",
+    "slug": "geography",
+    "description": "World geography, countries, and landmarks",
+    "icon": "🗺️",
+    "color": "#10b981"
+  },
+  {
+    "name": "Literature",
+    "slug": "literature",
+    "description": "Books, authors, and literary works",
+    "icon": "📖",
+    "color": "#f59e0b"
+  },
+  {
+    "name": "Technology",
+    "slug": "technology",
+    "description": "Computers, programming, and modern technology",
+    "icon": "💻",
+    "color": "#06b6d4"
+  },
+  {
+    "name": "Arts",
+    "slug": "arts",
+    "description": "Art history, famous artists, and artistic movements",
+    "icon": "🎨",
+    "color": "#ef4444"
+  },
+  {
+    "name": "Music",
+    "slug": "music",
+    "description": "Musical theory, instruments, and famous composers",
+    "icon": "🎵",
+    "color": "#a855f7"
+  },
+  {
+    "name": "Sports",
+    "slug": "sports",
+    "description": "Sports rules, history, and famous athletes",
+    "icon": "⚽",
+    "color": "#22c55e"
+  },
+  {
+    "name": "General Knowledge",
+    "slug": "general-knowledge",
+    "description": "Miscellaneous facts and trivia",
+    "icon": "💡",
+    "color": "#f97316"
+  }
+]
