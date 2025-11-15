@@ -1,6 +1,7 @@
 import { v } from "convex/values";
 import { mutation, query, action } from "../_generated/server";
 import { api } from "../_generated/api";
+import type { Id } from "../_generated/dataModel";
 
 // Admin: Get all quizzes with full details
 export const getAllQuizzes = query({
@@ -89,12 +90,12 @@ export const createQuiz = action({
       })
     ),
   },
-  handler: async (ctx, args) => {
+  handler: async (ctx, args): Promise<Id<"quizzes">> => {
     // Create the quiz
-    const quizId = await ctx.runMutation(api.web.quizzes.createQuizMutation, args);
+    const quizId: Id<"quizzes"> = await ctx.runMutation((api as any)["web/quizzes"].createQuizMutation, args);
 
     // Send push notification to all users
-    await ctx.runAction(api.pushNotifications.notifyQuizActivity, {
+    await ctx.runAction((api as any).pushNotifications.notifyQuizActivity, {
       quizId: args.id,
       title: "🎯 New Quiz Available!",
       body: `Check out the new "${args.title}" quiz in ${args.category}`,

@@ -1,14 +1,15 @@
 import { v } from "convex/values";
-import { mutation, action } from "./_generated/server";
+import { action } from "./_generated/server";
 import type { ActionCtx } from "./_generated/server";
 import { api } from "./_generated/api";
+import type { Id } from "./_generated/dataModel";
 
-const collectPushableUserIds = async (ctx: ActionCtx, role: string = "user") => {
-  const users = await ctx.runQuery(api.users.getPushableUsersByRole, {
+const collectPushableUserIds = async (ctx: ActionCtx, role: string = "user"): Promise<string[]> => {
+  const users = await ctx.runQuery((api as any).users.getPushableUsersByRole, {
     role,
   });
 
-  return users.map((user) => user.clerkId);
+  return users.map((user: any) => user.clerkId);
 };
 
 // Send push notification to a single user
@@ -20,9 +21,9 @@ export const sendPushNotification = action({
     data: v.optional(v.any()),
     channelId: v.optional(v.string()),
   },
-  handler: async (ctx, args) => {
+  handler: async (ctx, args): Promise<{ success: boolean; data?: any; error?: string }> => {
     // Get user's push token from database
-    const user = await ctx.runQuery(api.users.getUserByClerkId, {
+    const user = await ctx.runQuery((api as any).users.getUserByClerkId, {
       clerkId: args.userId,
     });
 
@@ -57,7 +58,7 @@ export const sendPushNotification = action({
       console.log('Push notification sent:', data);
 
       // Also create a notification in the database
-      await ctx.runMutation(api.mobile.notifications.createNotification, {
+      await ctx.runMutation((api as any)["mobile/notifications"].createNotification, {
         userId: args.userId,
         title: args.title,
         message: args.body,
@@ -66,9 +67,9 @@ export const sendPushNotification = action({
       });
 
       return { success: true, data };
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error('Error sending push notification:', error);
-      return { success: false, error: error.message };
+      return { success: false, error: error instanceof Error ? error.message : 'Unknown error' };
     }
   },
 });
@@ -82,11 +83,11 @@ export const sendBroadcastPushNotification = action({
     data: v.optional(v.any()),
     channelId: v.optional(v.string()),
   },
-  handler: async (ctx, args) => {
-    const results = [];
+  handler: async (ctx, args): Promise<{ success: boolean; results: any[] }> => {
+    const results: any[] = [];
 
     for (const userId of args.userIds) {
-      const result = await ctx.runAction(api.pushNotifications.sendPushNotification, {
+      const result = await ctx.runAction((api as any).pushNotifications.sendPushNotification, {
         userId,
         title: args.title,
         body: args.body,
@@ -108,7 +109,7 @@ export const notifyQuizCompleted = action({
     score: v.number(),
     totalQuestions: v.number(),
   },
-  handler: async (ctx, args) => {
+  handler: async (ctx, args): Promise<{ success: boolean; data?: any; error?: string }> => {
     const percentage = Math.round((args.score / args.totalQuestions) * 100);
     const isPerfect = args.score === args.totalQuestions;
 
@@ -139,8 +140,8 @@ export const notifyAchievement = action({
     achievementTitle: v.string(),
     achievementDescription: v.string(),
   },
-  handler: async (ctx, args) => {
-    return await ctx.runAction(api.pushNotifications.sendPushNotification, {
+  handler: async (ctx, args): Promise<{ success: boolean; data?: any; error?: string }> => {
+    return await ctx.runAction((api as any).pushNotifications.sendPushNotification, {
       userId: args.userId,
       title: `🏆 ${args.achievementTitle}`,
       body: args.achievementDescription,
@@ -162,14 +163,14 @@ export const notifyQuizActivity = action({
     screen: v.optional(v.string()),
     channelId: v.optional(v.string()),
   },
-  handler: async (ctx, args) => {
+  handler: async (ctx, args): Promise<{ success: boolean; results?: any[]; error?: string }> => {
     const userIds = await collectPushableUserIds(ctx, "user");
     if (userIds.length === 0) {
       console.log("No pushable users found for quiz activity notification");
       return { success: false, error: "No push tokens registered" };
     }
 
-    return await ctx.runAction(api.pushNotifications.sendBroadcastPushNotification, {
+    return await ctx.runAction((api as any).pushNotifications.sendBroadcastPushNotification, {
       userIds,
       title: args.title,
       body: args.body,
@@ -188,7 +189,7 @@ export const sendTestNotification = action({
   args: {
     pushToken: v.string(),
   },
-  handler: async (ctx, args) => {
+  handler: async (ctx, args): Promise<{ success: boolean; data?: any; error?: string }> => {
     const message = {
       to: args.pushToken,
       sound: 'default',
@@ -212,9 +213,9 @@ export const sendTestNotification = action({
       const data = await response.json();
       console.log('Test push notification sent:', data);
       return { success: true, data };
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error('Error sending test push notification:', error);
-      return { success: false, error: error.message };
+      return { success: false, error: error instanceof Error ? error.message : 'Unknown error' };
     }
   },
 });
