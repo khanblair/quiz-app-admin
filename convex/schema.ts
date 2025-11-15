@@ -8,11 +8,13 @@ export default defineSchema({
     name: v.optional(v.string()),
     imageUrl: v.optional(v.string()),
     role: v.string(), // "admin" or "user"
+    pushToken: v.optional(v.string()),
     createdAt: v.number(),
     lastLoginAt: v.number(),
   }).index("by_clerk_id", ["clerkId"])
     .index("by_email", ["email"])
-    .index("by_role", ["role"]),
+    .index("by_role", ["role"])
+    .index("by_push_token", ["pushToken"]),
 
   categories: defineTable({
     name: v.string(),

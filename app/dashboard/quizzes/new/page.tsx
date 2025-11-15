@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useMutation } from "convex/react";
+import { useMutation, useAction } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { useRouter } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -19,7 +19,7 @@ interface Question {
 export default function NewQuizPage() {
   const router = useRouter();
   const { user } = useUser();
-  const createQuiz = useMutation(api.web.quizzes.createQuiz);
+  const createQuiz = useAction(api.web.quizzes.createQuiz);
   const createNotification = useMutation(api.web.notifications.createNotification);
 
   const [title, setTitle] = useState("");

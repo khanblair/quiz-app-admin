@@ -1,6 +1,6 @@
 "use client";
 
-import { useQuery, useMutation } from "convex/react";
+import { useQuery, useMutation, useAction } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -15,6 +15,7 @@ export default function QuizzesPage() {
   const quizzes = useQuery(api.web.quizzes.getAllQuizzes);
   const deleteQuiz = useMutation(api.web.quizzes.deleteQuiz);
   const createNotification = useMutation(api.web.notifications.createNotification);
+  const notifyQuizActivity = useAction(api.pushNotifications.notifyQuizActivity);
   const bulkCreateQuizzesWithCategories = useMutation(api.web.quizzes.bulkCreateQuizzesWithCategories);
   
   const [searchQuery, setSearchQuery] = useState("");
@@ -48,9 +49,9 @@ export default function QuizzesPage() {
     }
   };
 
-  const handleDelete = async (quizId: Id<"quizzes">, quizTitle: string) => {
+  const handleDelete = async (quizDocId: Id<"quizzes">, quizId: string, quizTitle: string) => {
     try {
-      await deleteQuiz({ _id: quizId });
+      await deleteQuiz({ _id: quizDocId });
       
       if (user) {
         await createNotification({
@@ -59,6 +60,17 @@ export default function QuizzesPage() {
           message: `"${quizTitle}" has been deleted successfully`,
           type: "quiz_deleted",
         });
+        if (notifyQuizActivity) {
+          try {
+            await notifyQuizActivity({
+              quizId,
+              title: "Quiz deleted",
+              body: `"${quizTitle}" was removed from the featured quizzes.`,
+            });
+          } catch (error) {
+            console.error("Failed to send quiz delete notification:", error);
+          }
+        }
       }
       
       setDeleteConfirm(null);
@@ -233,7 +245,7 @@ export default function QuizzesPage() {
                     <Button
                       size="sm"
                       variant="danger"
-                      onClick={() => handleDelete(quiz._id, quiz.title)}
+                      onClick={() => handleDelete(quiz._id, quiz.id, quiz.title)}
                       className="flex-1"
                     >
                       Confirm Delete

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useQuery, useMutation } from "convex/react";
+import { useQuery, useMutation, useAction } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { useRouter, useParams } from "next/navigation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -26,6 +26,7 @@ export default function EditQuizPage() {
   const quiz = useQuery(api.web.quizzes.getAllQuizzes);
   const updateQuiz = useMutation(api.web.quizzes.updateQuiz);
   const createNotification = useMutation(api.web.notifications.createNotification);
+  const notifyQuizActivity = useAction(api.pushNotifications.notifyQuizActivity);
 
   const currentQuiz = quiz?.find((q) => q._id === quizId);
 
@@ -118,6 +119,17 @@ export default function EditQuizPage() {
           type: "quiz_updated",
           quizId: currentQuiz?.id,
         });
+        if (notifyQuizActivity) {
+          try {
+            await notifyQuizActivity({
+              quizId: currentQuiz?.id || "",
+              title: "Quiz updated",
+              body: `"${title}" was just updated on the admin dashboard.`,
+            });
+          } catch (error) {
+            console.error("Failed to send quiz update notification:", error);
+          }
+        }
       }
 
       router.push("/dashboard/quizzes");

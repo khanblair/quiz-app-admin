@@ -1,6 +1,5 @@
 import { v } from "convex/values";
 import { mutation, query } from "./_generated/server";
-import { UserIdentity } from "convex/server";
 
 // Get or create user from Clerk authentication
 export const getCurrentUser = query({
@@ -28,6 +27,7 @@ export const upsertUser = mutation({
     email: v.string(),
     name: v.optional(v.string()),
     imageUrl: v.optional(v.string()),
+    pushToken: v.optional(v.string()),
   },
   handler: async (ctx, args) => {
     const existing = await ctx.db
@@ -38,12 +38,19 @@ export const upsertUser = mutation({
     const now = Date.now();
 
     if (existing) {
-      await ctx.db.patch(existing._id, {
+      const updateData: any = {
         email: args.email,
         name: args.name,
         imageUrl: args.imageUrl,
         lastLoginAt: now,
-      });
+      };
+      
+      // Only update pushToken if provided
+      if (args.pushToken) {
+        updateData.pushToken = args.pushToken;
+      }
+      
+      await ctx.db.patch(existing._id, updateData);
       return existing._id;
     }
 
@@ -56,10 +63,56 @@ export const upsertUser = mutation({
       email: args.email,
       name: args.name,
       imageUrl: args.imageUrl,
+      pushToken: args.pushToken,
       role,
       createdAt: now,
       lastLoginAt: now,
     });
+  },
+});
+
+// Update user push token
+export const updatePushToken = mutation({
+  args: {
+    pushToken: v.string(),
+  },
+  handler: async (ctx, args) => {
+    const identity = await ctx.auth.getUserIdentity();
+    
+    if (!identity) {
+      throw new Error("Not authenticated");
+    }
+
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_clerk_id", (q) => q.eq("clerkId", identity.subject))
+      .first();
+
+    if (!user) {
+      // User not found yet, create a minimal user record with the push token
+      // This can happen if push notifications register before the full user sync completes
+      const userCount = await ctx.db.query("users").collect();
+      const role = userCount.length === 0 ? "admin" : "user";
+      const now = Date.now();
+      
+      await ctx.db.insert("users", {
+        clerkId: identity.subject,
+        email: identity.email || "",
+        name: identity.name || "User",
+        imageUrl: identity.pictureUrl,
+        pushToken: args.pushToken,
+        role,
+        createdAt: now,
+        lastLoginAt: now,
+      });
+    } else {
+      // User exists, update the push token
+      await ctx.db.patch(user._id, {
+        pushToken: args.pushToken,
+      });
+    }
+
+    return { success: true };
   },
 });
 
@@ -188,5 +241,60 @@ export const getUserStats = query({
       admins,
       users,
     };
+  },
+});
+
+// Get users with push tokens by role
+export const getPushableUsersByRole = query({
+  args: { role: v.string() },
+  handler: async (ctx, args) => {
+    const users = await ctx.db
+      .query("users")
+      .withIndex("by_role", (q) => q.eq("role", args.role))
+      .collect();
+
+    return users
+      .filter((user) => user.pushToken)
+      .map((user) => ({
+        clerkId: user.clerkId,
+        pushToken: user.pushToken,
+      }));
+  },
+});
+
+// Delete user account and all associated data
+export const deleteUserAccount = mutation({
+  args: {},
+  handler: async (ctx) => {
+    const identity = await ctx.auth.getUserIdentity();
+    
+    if (!identity) {
+      throw new Error("Not authenticated");
+    }
+
+    // Get user from database
+    const user = await ctx.db
+      .query("users")
+      .withIndex("by_clerk_id", (q) => q.eq("clerkId", identity.subject))
+      .first();
+
+    if (!user) {
+      throw new Error("User not found");
+    }
+
+    // Delete all user notifications
+    const notifications = await ctx.db
+      .query("notifications")
+      .withIndex("by_user", (q) => q.eq("userId", identity.subject))
+      .collect();
+
+    for (const notification of notifications) {
+      await ctx.db.delete(notification._id);
+    }
+
+    // Delete user record
+    await ctx.db.delete(user._id);
+
+    return { success: true, deletedNotifications: notifications.length };
   },
 });

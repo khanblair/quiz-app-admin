@@ -1,5 +1,6 @@
 import { v } from "convex/values";
-import { mutation, query } from "../_generated/server";
+import { mutation, query, action } from "../_generated/server";
+import { api } from "../_generated/api";
 
 // Admin: Get all quizzes with full details
 export const getAllQuizzes = query({
@@ -30,8 +31,8 @@ export const getQuizzesByCategory = query({
   },
 });
 
-// Admin: Create new quiz
-export const createQuiz = mutation({
+// Admin: Create new quiz (internal mutation)
+export const createQuizMutation = mutation({
   args: {
     id: v.string(),
     title: v.string(),
@@ -66,6 +67,41 @@ export const createQuiz = mutation({
       createdAt: now,
       updatedAt: now,
     });
+  },
+});
+
+// Admin: Create new quiz with push notifications
+export const createQuiz = action({
+  args: {
+    id: v.string(),
+    title: v.string(),
+    description: v.string(),
+    category: v.string(),
+    difficulty: v.string(),
+    duration: v.number(),
+    questions: v.array(
+      v.object({
+        id: v.string(),
+        question: v.string(),
+        options: v.array(v.string()),
+        correctAnswer: v.number(),
+        explanation: v.string(),
+      })
+    ),
+  },
+  handler: async (ctx, args) => {
+    // Create the quiz
+    const quizId = await ctx.runMutation(api.web.quizzes.createQuizMutation, args);
+
+    // Send push notification to all users
+    await ctx.runAction(api.pushNotifications.notifyQuizActivity, {
+      quizId: args.id,
+      title: "🎯 New Quiz Available!",
+      body: `Check out the new "${args.title}" quiz in ${args.category}`,
+      screen: `/quiz/${args.id}`,
+    });
+
+    return quizId;
   },
 });
 
